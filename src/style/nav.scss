@@ -1,0 +1,43 @@
+@import "var.scss";
+nav {
+    #topNav {
+        display: flex;
+        background-color: $green;
+        justify-content: space-between;
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-right: 2rem;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    #bottomNav {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        padding: 0.5rem 2rem;
+        color: $gray;
+        #links {
+            ul {
+                display: flex;
+                list-style: none;
+                li {
+                    margin-left: 2rem;
+                    cursor: pointer;
+                }
+                .selected {
+                    color: $green;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
