@@ -1,88 +1,9 @@
 @import "./../var.scss";
-@import "./../nav.scss";
-
-$heroHeight: 84vh;
+@import "./services.scss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 body {
+    padding: 0;
     margin: 0;
-    background-color: $white;
-}
-
-#hero {    
-    text-align: center;
-    width: 100vw;
-    height: $heroHeight;
-    .background {
-        background-image: url("./../../assets/images/background.jpg");
-        background-size: cover;
-        width: 100%;
-        height: $heroHeight;
-        position: absolute;
-        z-index: -1;
-        overflow: hidden;
-        filter: blur(4px);
-    }
-    #welcome {
-        padding-top: 20vh;
-        padding-left: 9rem;
-        color: $orange;
-        font-weight: bold;
-        font-size: 2.4rem;
-    }
-
-    #name {
-        padding-top: 1rem;
-        font-weight: bold;
-        color: $green;
-        font-size: 3rem;
-    }
-
-
-}
-
-
-.MPwidget {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    position: absolute;
-    top: 75vh;
-    left: 50vw;
-
-    .MPheader {
-        display: none;
-    }
-
-    .MPfooter {
-        background-color: transparent;
-        position: absolute;
-        left: 36vw;
-        width: 22ch;
-        top: 17vh;
-    }
-    table {
-        border-collapse:separate;
-        border-spacing: 2rem;
-        border: none;
-
-        td, th {
-            display: inline-block;
-        }
-        tr {
-            display: table-cell;
-        }
-
-        tr:nth-child(1) {
-            display: none;
-        }
-
-        tr {
-                width: 2rem;
-                height: 2rem;
-                padding: 2rem;
-                border-radius: 50%;
-                text-align: center;
-                font-size: 1rem;
-                background-color: rgba(255, 255, 255, 0.47) !important;
-            }
-    }
+    font-family: 'Poppins', sans-serif;
 }
