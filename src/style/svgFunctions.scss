@@ -1,0 +1,8 @@
+$_default_size: 4rem;
+@mixin svgImageSize($size:$_default_size) {
+    img {
+        width: $size;
+        height: $size;
+    }
+}
+

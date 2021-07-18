@@ -1,0 +1,38 @@
+@import "./../var.scss";
+@import "./nav.scss";
+$_sunset: linear-gradient(to top, #040308, #AD4A28, #DD723C, #FC7001, #DCB697, #9BA5AE, #3E5879, #020B1A);
+
+#prayer_section {
+    background: $_sunset;
+    position: relative;
+    margin-top: -1rem;
+    #blur {
+        height: 70vh;
+        width: 90vw;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 2rem;
+        background: rgba(255,255,255,0.3);
+        backdrop-filter: blur(10px);
+        z-index: 1;
+    }
+    .prayerTimes {
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        text-align: center;
+        width: 80vw;
+        justify-content: space-between;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .prayTimeCard {
+            font-size: 3rem;
+            .name{
+                font-weight: bold;
+            }
+        }
+    }
+}

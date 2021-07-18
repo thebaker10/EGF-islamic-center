@@ -1,9 +1,11 @@
 @import "./../var.scss";
+@import "./../svgFunctions.scss";
 
 @mixin card($color) {
     position: relative;
     width: 14vw;
     color: $white;
+    background-color: $white;
     .logo {
         border: $color 1rem solid;
         border-radius: 50%;
@@ -13,9 +15,7 @@
         justify-content: center;
         margin-left: 50%;
         transform: translateX(-50%);
-        img{
-            margin-top: 0.4rem;
-        }
+        @include svgImageSize;
     }
     
     .body {
@@ -45,14 +45,15 @@
         height: 20vh;
         position: absolute;
         z-index: -1;
-        top: 80vh;
+        top: 180vh;
     }
     
     #title {
         text-align: center;
         font-size: 3rem;
         font-weight: 400;
-        margin-top: 10vh;
+        padding-top: 10vh;
+        margin-top: 0;
     }
     
     #row {
@@ -80,7 +81,7 @@
     i {
         color: $white;
         position: absolute;
-        top: 90vh;
+        top: 190vh;
         font-size: 4rem;
         margin-left: 50%;
         transform: translateX(-50%);
