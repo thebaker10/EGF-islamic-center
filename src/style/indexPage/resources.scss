@@ -27,8 +27,9 @@
     position: relative;
     .background {
         background: url("./../../assets/images/ResourcesBackground.svg");
+        background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
-        height: calc(100vh + 1rem);
         position: absolute;
         top: 0;
         bottom: 0;
