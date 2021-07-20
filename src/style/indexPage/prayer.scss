@@ -1,5 +1,6 @@
 @import "./../var.scss";
 @import "./nav.scss";
+@import "./../frosty.scss";
 $_sunset: linear-gradient(to top, #040308, #AD4A28, #DD723C, #FC7001, #DCB697, #9BA5AE, #3E5879, #020B1A);
 
 #prayer_section {
@@ -12,11 +13,9 @@ $_sunset: linear-gradient(to top, #040308, #AD4A28, #DD723C, #FC7001, #DCB697, #
         position: absolute;
         top: 55%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 2rem;
-        background: rgba(255,255,255,0.3);
-        backdrop-filter: blur(10px);
         z-index: 1;
+        transform: translate(-50%, -50%);
+        @include frosty;
     }
     .prayerTimes {
         position: absolute;
