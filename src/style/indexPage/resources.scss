@@ -52,7 +52,7 @@
                 @include tab($red);
             }
             .tab:nth-child(2) {
-                @include tab($lightGreen);
+                @include tab(darken($lightGreen, 10));
             }
             .tab:nth-child(3) {
                 @include tab($purple);
