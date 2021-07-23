@@ -16,6 +16,10 @@
         margin-left: 50%;
         transform: translateX(-50%);
         @include svgImageSize;
+        img{
+
+            padding-top: 0.3rem;
+        }
     }
     
     .body {
