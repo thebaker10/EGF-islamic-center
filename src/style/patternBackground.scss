@@ -1,0 +1,24 @@
+@mixin patternBackground($hue) {
+    .background {
+        position: absolute;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        .img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -3;
+            background-repeat: repeat-x;
+            background-image: url("./../../assets/images/pattern.png");
+        }
+        .hue {
+            background-color: $hue;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -2;
+            opacity: 0.85;
+        }
+    }
+}
