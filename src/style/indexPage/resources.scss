@@ -42,7 +42,7 @@
     .content {
         display: flex;
         align-items: center;
-        margin-top: 2rem;
+        margin-top: 15vh;
         justify-content: space-around;
         .tabs {
             display: flex;
@@ -76,9 +76,9 @@
                 position: absolute;
                 z-index: -1;
             }
-            .content {
+            .explanation {
                 color: $white;
-                padding: 1rem 2rem;
+                padding: 4rem 2rem;
                 font-size: 1.5rem;
             }
         }

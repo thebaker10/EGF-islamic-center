@@ -3,11 +3,13 @@
 @import "./../frosty.scss";
 nav {
     @include svgImageSize;
-    // border-bottom: 1px solid $white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    transition: all 0.3s ease;
     ul {
         list-style: none;
         display: flex;
@@ -22,5 +24,9 @@ nav {
             flex-direction: column;
         }
         
+    }
+
+    &.hidden {
+        opacity: 0;
     }
 }

@@ -6,123 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/indexPage/index.scss">
-    <script defer src="./script.js"></script>
+    <script defer src="./script/script.ts"></script>
 </head>
 <body>
     <div class="scroll-container">
-    <section id="home">
-        <div class="topNav">
-            <div class="lang">
-                <ul>
-                    <li class="active">English</li>
-                    <li>Soomaali</li>
-                    <li>عربي</li>
-                </ul>
-            </div>
-            <div class="social">
-                <ul>
-                    <li><i class="fab fa-youtube"></i></li>
-                    <li><i class="fab fa-facebook"></i></li>
-                </ul>
-            </div>
-        </div>
-        <div class="content">
-            <div class="info">
-                <h1>East Grand Forks</h1>
-                <h1>Islamic Center</h1>
-                <p>We are an Islamic Center that is detected to help our Muslim community and provide the necessary resources for them to succeed. </p>
-            </div>
-            <div class="logo">
-                <img src="./assets/images/mosque.svg" alt="">
-            </div>
-            <button>Learn More</button>
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="background"></div>
-        <div class="container">
-            <h1 id="title">What do we do?</h1>
-            <div id="row">
-                <div  id="schooling">
-                    <div class="logo">
-                        <img src="./assets/images/quran.svg" alt="logo">
-                    </div>
-                    <div class="body">
-                        <div class="title">Islamic Schooling</div>
-                        <hr>
-                        <div class="description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div  id="prayer">
-                    <div class="logo">
-                        <img src="./assets/images/pryer.svg" alt="logo">
-                    </div>
-                    <div class="body">
-                        <div class="title">Prayer</div>
-                        <hr>
-                        <div class="description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div  id="resources">
-                    <div class="logo">
-                        <img src="./assets/images/book.svg" alt="logo">
-                    </div>
-                    <div class="body">
-                        <div class="title">Resources</div>
-                        <hr>
-                        <div class="description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div  id="events">
-                    <div class="logo">
-                        <img src="./assets/images/calender.svg" alt="logo">
-                    </div>
-                    <div class="body">
-                        <div class="title">Events</div>
-                        <hr>
-                        <div class="description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div  id="community">
-                    <div class="logo">
-                        <img src="./assets/images/community.svg" alt="logo">
-                    </div>
-                    <div class="body">
-                        <div class="title">Community Help</div>
-                        <hr>
-                        <div class="description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <section id="prayer_section">
-        <nav>
+        <nav class="hidden">
             <ul>
                 <li><a href="">
                     <span class="logo">
@@ -156,318 +44,431 @@
                 </a></li>
             </ul>
         </nav>
-        <div id="blur"></div>
-        <div class="prayerTimes">
-            <div class="prayTimeCard">
-                <img src="./assets/images/salat_fajr.png" alt="">
-                <div class="name">Fajr</div>
-                <div class="time">4:36 AM</div>
-            </div>
-            <div class="prayTimeCard">
-                <img src="./assets/images/salat_zuhr.png" alt="">
-                <div class="name">Zuhr</div>
-                <div class="time">4:36 AM</div>
-            </div>
-            <div class="prayTimeCard">
-                <img src="./assets/images/salat_asr.png" alt="">
-                <div class="name">Asr</div>
-                <div class="time">4:36 AM</div>
-            </div>
-            <div class="prayTimeCard">
-                <img src="./assets/images/salat_magrib.png" alt="">
-                <div class="name">Magrib</div>
-                <div class="time">4:36 AM</div>
-            </div>
-            <div class="prayTimeCard">
-                <img src="./assets/images/salat_isha.png" alt="">
-                <div class="name">Isha</div>
-                <div class="time">4:36 AM</div>
-            </div>
-        </div>
-    </section>
 
-    <section id="resources">
-        <div class="background"></div>
-        <nav>
-            <ul>
-                <li><a href="">
-                    <span class="logo">
-                        <img src="./assets/images/quran.svg" alt="logo">
-                    </span>
-                    <span class="title">Education</span>
-                </a></li>
-                <li><a href="">
-                    <span class="logo">
-                        <img src="./assets/images/pryer.svg" alt="logo">
-                    </span>
-                    <span class="title">Prayer</span>
-                </a></li>
-                <li><a href="">
-                    <span class="logo">
-                        <img src="./assets/images/book.svg" alt="logo">
-                    </span>
-                    <span class="title">Resources</span>
-                </a></li>
-                <li><a href="">
-                    <span class="logo">
-                        <img src="./assets/images/calender.svg" alt="logo">
-                    </span>
-                    <span class="title">Events</span>
-                </a></li>
-                <li><a href="">
-                    <span class="logo">
-                        <img src="./assets/images/community.svg" alt="logo">
-                    </span>
-                    <span class="title">Community</span>
-                </a></li>
-            </ul>
-        </nav>
-        <div class="content">
-            <div class="tabs">
-                <div class="tab">
-                    <div class="triangle"></div>
-                    <div class="title">Muslim Pro</div>
+        <section id="home">
+            <div class="topNav">
+                <div class="lang">
+                    <ul>
+                        <li class="active">English</li>
+                        <li>Soomaali</li>
+                        <li>عربي</li>
+                    </ul>
                 </div>
-                <div class="tab">
-                    <div class="triangle"></div>
-                    <div class="title">Muslim Pro</div>
-                </div>
-                <div class="tab">
-                    <div class="triangle"></div>
-                    <div class="title">Muslim Pro</div>
-                </div>
-                <div class="tab">
-                    <div class="triangle"></div>
-                    <div class="title">Muslim Pro</div>
-                </div>
-                <div class="tab">
-                    <div class="triangle"></div>
-                    <div class="title">Muslim Pro</div>
+                <div class="social">
+                    <ul>
+                        <li><i class="fab fa-youtube"></i></li>
+                        <li><i class="fab fa-facebook"></i></li>
+                    </ul>
                 </div>
             </div>
-            <div class="info">
+            <div class="content">
+                <div class="info">
+                    <h1>East Grand Forks</h1>
+                    <h1>Islamic Center</h1>
+                    <p>We are an Islamic Center that is detected to help our Muslim community and provide the necessary resources for them to succeed. </p>
+                </div>
+                <div class="logo">
+                    <img src="./assets/images/mosque.svg" alt="">
+                </div>
+                <button>Learn More</button>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="background"></div>
+            <div class="container">
+                <h1 id="title">What do we do?</h1>
+                <div id="row">
+                    <div  id="schooling">
+                        <div class="logo">
+                            <img src="./assets/images/quran.svg" alt="logo">
+                        </div>
+                        <div class="body">
+                            <div class="title">Islamic Schooling</div>
+                            <hr>
+                            <div class="description">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div  id="prayer">
+                        <div class="logo">
+                            <img src="./assets/images/pryer.svg" alt="logo">
+                        </div>
+                        <div class="body">
+                            <div class="title">Prayer</div>
+                            <hr>
+                            <div class="description">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div  id="resources">
+                        <div class="logo">
+                            <img src="./assets/images/book.svg" alt="logo">
+                        </div>
+                        <div class="body">
+                            <div class="title">Resources</div>
+                            <hr>
+                            <div class="description">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div  id="events">
+                        <div class="logo">
+                            <img src="./assets/images/calender.svg" alt="logo">
+                        </div>
+                        <div class="body">
+                            <div class="title">Events</div>
+                            <hr>
+                            <div class="description">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div  id="community">
+                        <div class="logo">
+                            <img src="./assets/images/community.svg" alt="logo">
+                        </div>
+                        <div class="body">
+                            <div class="title">Community Help</div>
+                            <hr>
+                            <div class="description">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="prayer_section">
+            <!-- <nav>
+                <ul>
+                    <li><a href="">
+                        <span class="logo">
+                            <img src="./assets/images/quran.svg" alt="logo">
+                        </span>
+                        <span class="title">Education</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="logo">
+                            <img src="./assets/images/pryer.svg" alt="logo">
+                        </span>
+                        <span class="title">Prayer</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="logo">
+                            <img src="./assets/images/book.svg" alt="logo">
+                        </span>
+                        <span class="title">Resources</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="logo">
+                            <img src="./assets/images/calender.svg" alt="logo">
+                        </span>
+                        <span class="title">Events</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="logo">
+                            <img src="./assets/images/community.svg" alt="logo">
+                        </span>
+                        <span class="title">Community</span>
+                    </a></li>
+                </ul>
+            </nav> -->
+            <div id="blur"></div>
+            <div class="prayerTimes">
+                <div class="prayTimeCard">
+                    <img src="./assets/images/salat_fajr.png" alt="">
+                    <div class="name">Fajr</div>
+                    <div class="time">4:36 AM</div>
+                </div>
+                <div class="prayTimeCard">
+                    <img src="./assets/images/salat_zuhr.png" alt="">
+                    <div class="name">Zuhr</div>
+                    <div class="time">4:36 AM</div>
+                </div>
+                <div class="prayTimeCard">
+                    <img src="./assets/images/salat_asr.png" alt="">
+                    <div class="name">Asr</div>
+                    <div class="time">4:36 AM</div>
+                </div>
+                <div class="prayTimeCard">
+                    <img src="./assets/images/salat_magrib.png" alt="">
+                    <div class="name">Magrib</div>
+                    <div class="time">4:36 AM</div>
+                </div>
+                <div class="prayTimeCard">
+                    <img src="./assets/images/salat_isha.png" alt="">
+                    <div class="name">Isha</div>
+                    <div class="time">4:36 AM</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources">
+            <div class="background"></div>
+            <div class="content">
+                <div class="tabs">
+                    <div class="tab">
+                        <div class="triangle"></div>
+                        <div class="title">Muslim Pro</div>
+                    </div>
+                    <div class="tab">
+                        <div class="triangle"></div>
+                        <div class="title">Muslim Pro</div>
+                    </div>
+                    <div class="tab">
+                        <div class="triangle"></div>
+                        <div class="title">Muslim Pro</div>
+                    </div>
+                    <div class="tab">
+                        <div class="triangle"></div>
+                        <div class="title">Muslim Pro</div>
+                    </div>
+                    <div class="tab">
+                        <div class="triangle"></div>
+                        <div class="title">Muslim Pro</div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="frosty"></div>
+                    <div class="explanation">
+                        
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue libero nec lectus lobortis, non interdum massa rhoncus. Proin tempus semper mi quis accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin scelerisque ac turpis sed lobortis. Praesent ullamcorper tincidunt justo et hendrerit. Curabitur a venenatis leo, a lacinia libero. Nullam vitae est sed lorem faucibus iaculis sit amet eu urna. Sed id orci auctor, tempor purus sed, tempor sem. Vestibulum laoreet mollis dapibus. In maximus sem lorem, quis maximus nisl condimentum quis. Etiam eu ipsum porttitor, scelerisque ex in, iaculis felis. Suspendisse interdum orci vitae enim rutrum, ut blandit nibh scelerisque. Etiam massa nisi, accumsan sed erat in, efficitur vehicula sem. Aliquam erat volutpat. Maecenas ut viverra diam.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events">
+            <div class="background">
+                <div class="img"></div>
+                <div class="hue"></div>
+            </div>
+            <!-- <nav>
+                <ul>
+                    <li><a href="">
+                        <span class="logo">
+                            <img src="./assets/images/quran.svg" alt="logo">
+                        </span>
+                        <span class="title">Education</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="logo">
+                            <img src="./assets/images/pryer.svg" alt="logo">
+                        </span>
+                        <span class="title">Prayer</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="logo">
+                            <img src="./assets/images/book.svg" alt="logo">
+                        </span>
+                        <span class="title">Resources</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="logo">
+                            <img src="./assets/images/calender.svg" alt="logo">
+                        </span>
+                        <span class="title">Events</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="logo">
+                            <img src="./assets/images/community.svg" alt="logo">
+                        </span>
+                        <span class="title">Community</span>
+                    </a></li>
+                </ul>
+            </nav> -->
+            <div class="content">
                 <div class="frosty"></div>
-                <div class="content">
-                    
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue libero nec lectus lobortis, non interdum massa rhoncus. Proin tempus semper mi quis accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin scelerisque ac turpis sed lobortis. Praesent ullamcorper tincidunt justo et hendrerit. Curabitur a venenatis leo, a lacinia libero. Nullam vitae est sed lorem faucibus iaculis sit amet eu urna. Sed id orci auctor, tempor purus sed, tempor sem. Vestibulum laoreet mollis dapibus. In maximus sem lorem, quis maximus nisl condimentum quis. Etiam eu ipsum porttitor, scelerisque ex in, iaculis felis. Suspendisse interdum orci vitae enim rutrum, ut blandit nibh scelerisque. Etiam massa nisi, accumsan sed erat in, efficitur vehicula sem. Aliquam erat volutpat. Maecenas ut viverra diam.
+                <div class="calender">
+                    <div class="calender_nav">
+                        <div class="date">Augest 2021</div>
+                        <hr>
+                    </div>
+                    <div class="grid">
+                        <span class="day">Sn</span>
+                        <span class="day">M</span>
+                        <span class="day">T</span>
+                        <span class="day">W</span>
+                        <span class="day">TR</span>
+                        <span class="day">F</span>
+                        <span class="day">St</span>
+                        <span class="highlight">1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                        <span>11</span>
+                        <span>12</span>
+                        <span>13</span>
+                        <span>14</span>
+                        <span>15</span>
+                        <span>16</span>
+                        <span>17</span>
+                        <span class="highlight">18</span>
+                        <span>19</span>
+                        <span class="highlight">20</span>
+                        <span>21</span>
+                        <span>22</span>
+                        <span>23</span>
+                        <span>24</span>
+                        <span>25</span>
+                        <span>26</span>
+                        <span>27</span>
+                        <span>28</span>
+                        <span>29</span>
+                        <span>30</span>
+                        <span class="highlight">31</span>
+                        <span class="disabled">1</span>
+                        <span class="disabled">2</span>
+                        <span class="disabled">3</span>
+                        <span class="disabled">4</span>
+                    </div>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="dayNumber">01</div>
+                        <div class="date">
+                            <div class="monthYear">Augest 2021</div>
+                            <div class="dayName">Sunday</div>
+                        </div>
+                        <div class="title">Some Event</div>
+                    </div>
+                    <div class="event">
+                        <div class="dayNumber">01</div>
+                        <div class="date">
+                            <div class="monthYear">Augest 2021</div>
+                            <div class="dayName">Sunday</div>
+                        </div>
+                        <div class="title">Some Event</div>
+                    </div>
+                    <div class="event">
+                        <div class="dayNumber">01</div>
+                        <div class="date">
+                            <div class="monthYear">Augest 2021</div>
+                            <div class="dayName">Sunday</div>
+                        </div>
+                        <div class="title">Some Event</div>
+                    </div>
+                    <div class="event">
+                        <div class="dayNumber">01</div>
+                        <div class="date">
+                            <div class="monthYear">Augest 2021</div>
+                            <div class="dayName">Sunday</div>
+                        </div>
+                        <div class="title">Some Event</div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="events">
-        <div class="background">
-            <div class="img"></div>
-            <div class="hue"></div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="">
-                    <span class="logo">
-                        <img src="./assets/images/quran.svg" alt="logo">
-                    </span>
-                    <span class="title">Education</span>
-                </a></li>
-                <li><a href="">
-                    <span class="logo">
-                        <img src="./assets/images/pryer.svg" alt="logo">
-                    </span>
-                    <span class="title">Prayer</span>
-                </a></li>
-                <li><a href="">
-                    <span class="logo">
-                        <img src="./assets/images/book.svg" alt="logo">
-                    </span>
-                    <span class="title">Resources</span>
-                </a></li>
-                <li><a href="">
-                    <span class="logo">
-                        <img src="./assets/images/calender.svg" alt="logo">
-                    </span>
-                    <span class="title">Events</span>
-                </a></li>
-                <li><a href="">
-                    <span class="logo">
-                        <img src="./assets/images/community.svg" alt="logo">
-                    </span>
-                    <span class="title">Community</span>
-                </a></li>
-            </ul>
-        </nav>
-        <div class="content">
-            <div class="frosty"></div>
-            <div class="calender">
-                <div class="calender_nav">
-                    <div class="date">Augest 2021</div>
-                    <hr>
-                </div>
-                <div class="grid">
-                    <span class="day">Sn</span>
-                    <span class="day">M</span>
-                    <span class="day">T</span>
-                    <span class="day">W</span>
-                    <span class="day">TR</span>
-                    <span class="day">F</span>
-                    <span class="day">St</span>
-                    <span class="highlight">1</span>
-                    <span>2</span>
-                    <span>3</span>
-                    <span>4</span>
-                    <span>5</span>
-                    <span>6</span>
-                    <span>7</span>
-                    <span>8</span>
-                    <span>9</span>
-                    <span>10</span>
-                    <span>11</span>
-                    <span>12</span>
-                    <span>13</span>
-                    <span>14</span>
-                    <span>15</span>
-                    <span>16</span>
-                    <span>17</span>
-                    <span class="highlight">18</span>
-                    <span>19</span>
-                    <span class="highlight">20</span>
-                    <span>21</span>
-                    <span>22</span>
-                    <span>23</span>
-                    <span>24</span>
-                    <span>25</span>
-                    <span>26</span>
-                    <span>27</span>
-                    <span>28</span>
-                    <span>29</span>
-                    <span>30</span>
-                    <span class="highlight">31</span>
-                    <span class="disabled">1</span>
-                    <span class="disabled">2</span>
-                    <span class="disabled">3</span>
-                    <span class="disabled">4</span>
-                </div>
-            </div>
-            <div class="events">
-                <div class="event">
-                    <div class="dayNumber">01</div>
-                    <div class="date">
-                        <div class="monthYear">Augest 2021</div>
-                        <div class="dayName">Sunday</div>
-                    </div>
-                    <div class="title">Some Event</div>
-                </div>
-                <div class="event">
-                    <div class="dayNumber">01</div>
-                    <div class="date">
-                        <div class="monthYear">Augest 2021</div>
-                        <div class="dayName">Sunday</div>
-                    </div>
-                    <div class="title">Some Event</div>
-                </div>
-                <div class="event">
-                    <div class="dayNumber">01</div>
-                    <div class="date">
-                        <div class="monthYear">Augest 2021</div>
-                        <div class="dayName">Sunday</div>
-                    </div>
-                    <div class="title">Some Event</div>
-                </div>
-                <div class="event">
-                    <div class="dayNumber">01</div>
-                    <div class="date">
-                        <div class="monthYear">Augest 2021</div>
-                        <div class="dayName">Sunday</div>
-                    </div>
-                    <div class="title">Some Event</div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
-    <section id="donation">
-        <nav>
-            <ul>
-                <li><a href="">
-                    <span class="logo">
-                        <img src="./assets/images/quran.svg" alt="logo">
-                    </span>
-                    <span class="title">Education</span>
-                </a></li>
-                <li><a href="">
-                    <span class="logo">
-                        <img src="./assets/images/pryer.svg" alt="logo">
-                    </span>
-                    <span class="title">Prayer</span>
-                </a></li>
-                <li><a href="">
-                    <span class="logo">
-                        <img src="./assets/images/book.svg" alt="logo">
-                    </span>
-                    <span class="title">Resources</span>
-                </a></li>
-                <li><a href="">
-                    <span class="logo">
-                        <img src="./assets/images/calender.svg" alt="logo">
-                    </span>
-                    <span class="title">Events</span>
-                </a></li>
-                <li><a href="">
-                    <span class="logo">
-                        <img src="./assets/images/community.svg" alt="logo">
-                    </span>
-                    <span class="title">Community</span>
-                </a></li>
-            </ul>
-        </nav>
-        <div class="background"></div>
-        <div class="content">
-            <h1>How Can You Help Us?</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            </p>
-            <button class="donate">Donate Now!</button>
-        </div>
-    </section>
-
-    <footer>
-        <div class="background">
-            <div class="img"></div>
-            <div class="hue"></div>
-        </div>
-        <div class="content">
-            <div class="contactUs">
-                <h1>Contact Us</h1>
+        <section id="donation">
+            <!-- <nav>
                 <ul>
-                    <li>
-                        <div class="logo"><i class="fas fa-phone-alt"></i></div>
-                        <div class="info">(218) 773-4020</div>
-                    </li>
-                    <li>
-                        <div class="logo"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="info">1500 5th Ave NE, East Grand Forks, MN 56721</div>
-                    </li>
+                    <li><a href="">
+                        <span class="logo">
+                            <img src="./assets/images/quran.svg" alt="logo">
+                        </span>
+                        <span class="title">Education</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="logo">
+                            <img src="./assets/images/pryer.svg" alt="logo">
+                        </span>
+                        <span class="title">Prayer</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="logo">
+                            <img src="./assets/images/book.svg" alt="logo">
+                        </span>
+                        <span class="title">Resources</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="logo">
+                            <img src="./assets/images/calender.svg" alt="logo">
+                        </span>
+                        <span class="title">Events</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="logo">
+                            <img src="./assets/images/community.svg" alt="logo">
+                        </span>
+                        <span class="title">Community</span>
+                    </a></li>
                 </ul>
+            </nav> -->
+            <div class="background"></div>
+            <div class="content">
+                <h1>How Can You Help Us?</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+                <button class="donate">Donate Now!</button>
             </div>
-            <div class="quickMenu">
-                <h1>Quick Menu</h1>
-                <ul>
-                    <li>Education</li>
-                    <li>Prayer</li>
-                    <li>Resources</li>
-                    <li>Events</li>
-                    <li>Community</li>
-                </ul>
+        </section>
+
+        <footer>
+            <div class="background">
+                <div class="img"></div>
+                <div class="hue"></div>
             </div>
-            <div class="newsLetter">
-                <h1>News Letter</h1>
-                <form>
-                    <input type="email" placeholder="Enter your email">
-                    <button>Subscribe</button>
-                </form>
+            <div class="content">
+                <div class="contactUs">
+                    <h1>Contact Us</h1>
+                    <ul>
+                        <li>
+                            <div class="logo"><i class="fas fa-phone-alt"></i></div>
+                            <div class="info">(218) 773-4020</div>
+                        </li>
+                        <li>
+                            <div class="logo"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info">1500 5th Ave NE, East Grand Forks, MN 56721</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quickMenu">
+                    <h1>Quick Menu</h1>
+                    <ul>
+                        <li>Education</li>
+                        <li>Prayer</li>
+                        <li>Resources</li>
+                        <li>Events</li>
+                        <li>Community</li>
+                    </ul>
+                </div>
+                <div class="newsLetter">
+                    <h1>News Letter</h1>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </div>
 </body>
 </html>

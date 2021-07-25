@@ -9,6 +9,7 @@ footer {
     height: $height;
     display: flex;
     justify-content: center;
+    position: relative;
     
     @include patternBackground($black, 100vw, $height);
     ul {
