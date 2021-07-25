@@ -51,6 +51,12 @@
             $animation-speed: 2s;
             svg {
                 width: 30vw;
+                #qubba {
+                    fill: url("./../../assets/images/temp.jpg") !important;
+                }
+                #house {
+                    fill: #bbac8d !important;
+                }
                 #door1 {
                     animation: doorAnimation $animation-speed infinite alternate 0s;
                 }
@@ -87,8 +93,8 @@
 }
 
 
-$doorColor: #dbbd5f;
-$doorColorChanged: lighten($color: $doorColor, $amount: 20);
+$doorColor: gold;
+$doorColorChanged: white;
 
 @keyframes doorAnimation { 
     from {
