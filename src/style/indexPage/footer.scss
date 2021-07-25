@@ -52,7 +52,7 @@ footer {
 
             button {
                 height: $height;
-                width: $width/3;
+                width: calc($width/3);
                 border-radius: 0.4vw;
                 border: none;
                 background-color: $yellow;
