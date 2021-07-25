@@ -48,8 +48,18 @@
 
         .logo {
             grid-area: Logo;
-            img {
+            $animation-speed: 2s;
+            svg {
                 width: 30vw;
+                #door1 {
+                    animation: doorAnimation $animation-speed infinite alternate 0s;
+                }
+                #door2 { 
+                    animation: doorAnimation $animation-speed infinite alternate $animation-speed;
+                }
+                #door3 {
+                    animation: doorAnimation $animation-speed infinite alternate $animation-speed*2;
+                }
             }
         }
 
@@ -75,3 +85,17 @@
     }
     
 }
+
+
+$doorColor: #dbbd5f;
+$doorColorChanged: lighten($color: $doorColor, $amount: 20);
+
+@keyframes doorAnimation { 
+    from {
+        fill:$doorColor;
+    }
+    to {
+        fill: $doorColorChanged;
+    }
+}
+
