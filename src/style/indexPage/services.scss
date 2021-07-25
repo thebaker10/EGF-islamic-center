@@ -43,13 +43,14 @@
 
 
 #services {
+    position: relative;
     .background {
         background: url("./../../assets/images/servicesBackground.svg");
         width: 100vw;
         height: 20vh;
         position: absolute;
         z-index: -1;
-        top: 180vh;
+        top: 80vh;
     }
     
     #title {

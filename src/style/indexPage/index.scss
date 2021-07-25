@@ -8,13 +8,29 @@
 @import "./footer.scss";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-body {
+html,body {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+    overflow: hidden;
+    // height: 100vh;
 }
+
+.scroll-container { 
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: normal;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
 
 section {
     height: 100vh;   
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+
+footer {
+    scroll-snap-align: start;
 }
