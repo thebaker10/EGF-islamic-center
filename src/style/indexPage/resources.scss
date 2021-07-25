@@ -61,7 +61,7 @@
                 @include tab($brown);
             }
             .tab:nth-child(5) {
-                @include tab($darkGreen);
+                @include tab(rgb(23, 161, 207));
             }
         }
         .info {

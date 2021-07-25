@@ -52,10 +52,10 @@
             svg {
                 width: 30vw;
                 #qubba {
-                    fill: url("./../../assets/images/temp.jpg") !important;
+                    fill: $qoba_color !important;
                 }
                 #house {
-                    fill: #bbac8d !important;
+                    fill: $house_color !important;
                 }
                 #door1 {
                     animation: doorAnimation $animation-speed infinite alternate 0s;
@@ -93,8 +93,7 @@
 }
 
 
-$doorColor: gold;
-$doorColorChanged: white;
+
 
 @keyframes doorAnimation { 
     from {
