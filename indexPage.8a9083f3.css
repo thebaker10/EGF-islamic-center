@@ -108,7 +108,7 @@
   background-color: #ffffff;
 }
 #services #row #resources .logo {
-  border: #2B94BB 1rem solid;
+  border: #17a1cf 1rem solid;
   border-radius: 50%;
   width: 10rem;
   height: 10rem;
@@ -125,7 +125,7 @@
   padding-top: 0.3rem;
 }
 #services #row #resources .body {
-  background-color: #2B94BB;
+  background-color: #17a1cf;
   position: absolute;
   top: 5rem;
   border-radius: 2rem;
@@ -279,10 +279,10 @@
   width: 30vw;
 }
 #home .content .logo svg #qubba {
-  fill: url("/temp.4df1668c.jpg") !important;
+  fill: #257e63 !important;
 }
 #home .content .logo svg #house {
-  fill: #bbac8d !important;
+  fill: #704f1c !important;
 }
 #home .content .logo svg #door1 {
   animation: doorAnimation 2s infinite alternate 0s;
@@ -297,7 +297,7 @@
   grid-area: button;
   border: 0;
   width: 20vw;
-  background-color: #2B94BB;
+  background-color: #17a1cf;
   color: #ffffff;
   font-size: 2rem;
   border-radius: 10vw;
@@ -309,12 +309,12 @@
   text-align: center;
   grid-area: arrow;
   font-size: 4rem;
-  color: #2B94BB;
+  color: #17a1cf;
 }
 
 @keyframes doorAnimation {
   from {
-    fill: gold;
+    fill: #e0c218;
   }
   to {
     fill: white;
@@ -356,8 +356,8 @@ nav.hidden {
   margin-top: -1rem;
 }
 #prayer_section #blur {
-  height: 70vh;
-  width: 90vw;
+  height: 55vh;
+  width: 85vw;
   position: absolute;
   top: 55%;
   left: 50%;
@@ -519,7 +519,7 @@ nav.hidden {
   margin-left: 2rem;
 }
 #resources .content .tabs .tab:nth-child(5) {
-  background-color: #048642;
+  background-color: #17a1cf;
   color: #ffffff;
   width: 30vw;
   margin: 1rem 1rem;
@@ -801,7 +801,7 @@ footer .content .newsLetter input {
 }
 footer .content .newsLetter button {
   height: 2rem;
-  width: calc($width/3);
+  width: 10vw;
   border-radius: 0.4vw;
   border: none;
   background-color: #E5AE49;

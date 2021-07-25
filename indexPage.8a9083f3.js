@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\assets\\images\\servicesBackground.svg":[["servicesBackground.a9a581ea.svg","assets/images/servicesBackground.svg"],"assets/images/servicesBackground.svg"],"./..\\..\\assets\\images\\HomeBackground.svg":[["HomeBackground.8a98f2f7.svg","assets/images/HomeBackground.svg"],"assets/images/HomeBackground.svg"],"./..\\..\\assets\\images\\temp.jpg":[["temp.4df1668c.jpg","assets/images/temp.jpg"],"assets/images/temp.jpg"],"./..\\..\\assets\\images\\ResourcesBackground.svg":[["ResourcesBackground.08d5e7aa.svg","assets/images/ResourcesBackground.svg"],"assets/images/ResourcesBackground.svg"],"./..\\..\\assets\\images\\pattern.png":[["pattern.554761f1.png","assets/images/pattern.png"],"assets/images/pattern.png"],"./..\\..\\assets\\images\\communityBackground.svg":[["communityBackground.d25f5b9e.svg","assets/images/communityBackground.svg"],"assets/images/communityBackground.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\..\\assets\\images\\servicesBackground.svg":[["servicesBackground.a9a581ea.svg","assets/images/servicesBackground.svg"],"assets/images/servicesBackground.svg"],"./..\\..\\assets\\images\\HomeBackground.svg":[["HomeBackground.8a98f2f7.svg","assets/images/HomeBackground.svg"],"assets/images/HomeBackground.svg"],"./..\\..\\assets\\images\\ResourcesBackground.svg":[["ResourcesBackground.08d5e7aa.svg","assets/images/ResourcesBackground.svg"],"assets/images/ResourcesBackground.svg"],"./..\\..\\assets\\images\\pattern.png":[["pattern.554761f1.png","assets/images/pattern.png"],"assets/images/pattern.png"],"./..\\..\\assets\\images\\communityBackground.svg":[["communityBackground.d25f5b9e.svg","assets/images/communityBackground.svg"],"assets/images/communityBackground.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "19622" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60679" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

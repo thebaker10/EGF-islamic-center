@@ -1,0 +1,1 @@
+{"version":3,"sources":["style\\index.scss","style\\var.scss"],"names":[],"mappings":"AAEA;EACI,kBCHI","file":"style.d9cbfdb6.css","sourceRoot":"..\\src","sourcesContent":["@import \"var\";\r\n\r\nbody {\r\n    background-color : $black;\r\n}","$black: black"]}
