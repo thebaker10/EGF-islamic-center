@@ -1,10 +1,7 @@
-export function IndexFunctions() {
-    _toggleNavbar();
-}
+import Calendar from "./Calendar";
 
 
-//turn on and off the navbar
-function _toggleNavbar() {  
+export function toggleNavbar() {  
     const prayerSection = document.getElementById("prayer_section");
     const servicesSection = document.getElementById("services");
     const homeSection = document.getElementById("home");
@@ -21,4 +18,9 @@ function _toggleNavbar() {
     new IntersectionObserver(hideNavBar, options).observe(servicesSection);
     new IntersectionObserver(hideNavBar, options).observe(homeSection);
 
+}
+
+export function initCalendar() {
+    const calendar = new Calendar();
+    calendar.init();
 }
