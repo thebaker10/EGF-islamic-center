@@ -189,23 +189,531 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\webfonts\\fa-brands-400.eot":[["fa-brands-400.7b5acd02.eot","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot"],"./..\\webfonts\\fa-brands-400.woff2":[["fa-brands-400.34cc846b.woff2","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2"],"./..\\webfonts\\fa-brands-400.woff":[["fa-brands-400.75159956.woff","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff"],"./..\\webfonts\\fa-brands-400.ttf":[["fa-brands-400.f885063e.ttf","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf"],"./..\\webfonts\\fa-brands-400.svg":[["fa-brands-400.1f0eb095.svg","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg"],"./..\\webfonts\\fa-regular-400.eot":[["fa-regular-400.d4b9b17f.eot","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot"],"./..\\webfonts\\fa-regular-400.woff2":[["fa-regular-400.82c42f2f.woff2","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2"],"./..\\webfonts\\fa-regular-400.woff":[["fa-regular-400.adc5c7aa.woff","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff"],"./..\\webfonts\\fa-regular-400.ttf":[["fa-regular-400.b073eab5.ttf","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf"],"./..\\webfonts\\fa-regular-400.svg":[["fa-regular-400.16d6ac71.svg","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg"],"./..\\webfonts\\fa-solid-900.eot":[["fa-solid-900.0b60ff24.eot","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot"],"./..\\webfonts\\fa-solid-900.woff2":[["fa-solid-900.55d5ef42.woff2","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"],"./..\\webfonts\\fa-solid-900.woff":[["fa-solid-900.f824330b.woff","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff"],"./..\\webfonts\\fa-solid-900.ttf":[["fa-solid-900.47a039f3.ttf","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf"],"./..\\webfonts\\fa-solid-900.svg":[["fa-solid-900.d08d5f59.svg","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"script/index.ts":[function(require,module,exports) {
+},{"./..\\webfonts\\fa-brands-400.eot":[["fa-brands-400.7b5acd02.eot","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot"],"./..\\webfonts\\fa-brands-400.woff2":[["fa-brands-400.34cc846b.woff2","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2"],"./..\\webfonts\\fa-brands-400.woff":[["fa-brands-400.75159956.woff","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff"],"./..\\webfonts\\fa-brands-400.ttf":[["fa-brands-400.f885063e.ttf","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf"],"./..\\webfonts\\fa-brands-400.svg":[["fa-brands-400.1f0eb095.svg","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg"],"./..\\webfonts\\fa-regular-400.eot":[["fa-regular-400.d4b9b17f.eot","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot"],"./..\\webfonts\\fa-regular-400.woff2":[["fa-regular-400.82c42f2f.woff2","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2"],"./..\\webfonts\\fa-regular-400.woff":[["fa-regular-400.adc5c7aa.woff","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff"],"./..\\webfonts\\fa-regular-400.ttf":[["fa-regular-400.b073eab5.ttf","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf"],"./..\\webfonts\\fa-regular-400.svg":[["fa-regular-400.16d6ac71.svg","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg"],"./..\\webfonts\\fa-solid-900.eot":[["fa-solid-900.0b60ff24.eot","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot"],"./..\\webfonts\\fa-solid-900.woff2":[["fa-solid-900.55d5ef42.woff2","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"],"./..\\webfonts\\fa-solid-900.woff":[["fa-solid-900.f824330b.woff","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff"],"./..\\webfonts\\fa-solid-900.ttf":[["fa-solid-900.47a039f3.ttf","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf"],"./..\\webfonts\\fa-solid-900.svg":[["fa-solid-900.d08d5f59.svg","../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg"],"../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"script/Services/CalenderAPIService.ts":[function(require,module,exports) {
 "use strict";
+
+var __awaiter = this && this.__awaiter || function (thisArg, _arguments, P, generator) {
+  function adopt(value) {
+    return value instanceof P ? value : new P(function (resolve) {
+      resolve(value);
+    });
+  }
+
+  return new (P || (P = Promise))(function (resolve, reject) {
+    function fulfilled(value) {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    }
+
+    function rejected(value) {
+      try {
+        step(generator["throw"](value));
+      } catch (e) {
+        reject(e);
+      }
+    }
+
+    function step(result) {
+      result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+    }
+
+    step((generator = generator.apply(thisArg, _arguments || [])).next());
+  });
+};
+
+var __generator = this && this.__generator || function (thisArg, body) {
+  var _ = {
+    label: 0,
+    sent: function sent() {
+      if (t[0] & 1) throw t[1];
+      return t[1];
+    },
+    trys: [],
+    ops: []
+  },
+      f,
+      y,
+      t,
+      g;
+  return g = {
+    next: verb(0),
+    "throw": verb(1),
+    "return": verb(2)
+  }, typeof Symbol === "function" && (g[Symbol.iterator] = function () {
+    return this;
+  }), g;
+
+  function verb(n) {
+    return function (v) {
+      return step([n, v]);
+    };
+  }
+
+  function step(op) {
+    if (f) throw new TypeError("Generator is already executing.");
+
+    while (_) {
+      try {
+        if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+        if (y = 0, t) op = [op[0] & 2, t.value];
+
+        switch (op[0]) {
+          case 0:
+          case 1:
+            t = op;
+            break;
+
+          case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+          case 5:
+            _.label++;
+            y = op[1];
+            op = [0];
+            continue;
+
+          case 7:
+            op = _.ops.pop();
+
+            _.trys.pop();
+
+            continue;
+
+          default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
+              _ = 0;
+              continue;
+            }
+
+            if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+
+            if (op[0] === 6 && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+
+              _.ops.push(op);
+
+              break;
+            }
+
+            if (t[2]) _.ops.pop();
+
+            _.trys.pop();
+
+            continue;
+        }
+
+        op = body.call(thisArg, _);
+      } catch (e) {
+        op = [6, e];
+        y = 0;
+      } finally {
+        f = t = 0;
+      }
+    }
+
+    if (op[0] & 5) throw op[1];
+    return {
+      value: op[0] ? op[1] : void 0,
+      done: true
+    };
+  }
+};
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.IndexFunctions = void 0;
 
-function IndexFunctions() {
-  _toggleNavbar();
-}
+var CalendarAPIService =
+/** @class */
+function () {
+  function CalendarAPIService() {
+    this.apiKey = "AIzaSyD227OlDj5joTJ_SlnqDXwkOMQs-eKLLoU";
+    this.calendarID = "3oj3bhd9q6325maglm0i8srom4@group.calendar.google.com";
+    this.maxResults = 4;
+  }
 
-exports.IndexFunctions = IndexFunctions; //turn on and off the navbar
+  CalendarAPIService.prototype.getEvents = function () {
+    return __awaiter(this, void 0, Promise, function () {
+      var data, events;
+      return __generator(this, function (_a) {
+        switch (_a.label) {
+          case 0:
+            return [4
+            /*yield*/
+            , this.getDataFromAPI()];
 
-function _toggleNavbar() {
+          case 1:
+            data = _a.sent();
+            events = this.convertData(data);
+            return [2
+            /*return*/
+            , events];
+        }
+      });
+    });
+  };
+
+  CalendarAPIService.prototype.getDataFromAPI = function () {
+    return __awaiter(this, void 0, Promise, function () {
+      var date, calendarData;
+      return __generator(this, function (_a) {
+        switch (_a.label) {
+          case 0:
+            date = new Date().toISOString();
+            return [4
+            /*yield*/
+            , fetch("https://www.googleapis.com/calendar/v3/calendars/" + this.calendarID + "/events?maxResults=" + this.maxResults + "&orderBy=startTime&singleEvents=True&timeMin=" + date + "&key=" + this.apiKey).then(function (body) {
+              return body.json();
+            })];
+
+          case 1:
+            calendarData = _a.sent();
+            return [2
+            /*return*/
+            , calendarData];
+        }
+      });
+    });
+  };
+
+  CalendarAPIService.prototype.convertData = function (data) {
+    var events = new Array();
+
+    for (var _i = 0, _a = data.items; _i < _a.length; _i++) {
+      var item = _a[_i];
+      var event = {
+        date: new Date(item.start.dateTime),
+        name: item.summary
+      };
+      events.push(event);
+    }
+
+    return events;
+  };
+
+  return CalendarAPIService;
+}();
+
+exports.default = CalendarAPIService;
+},{}],"script/Index/Calendar.ts":[function(require,module,exports) {
+"use strict";
+
+var __awaiter = this && this.__awaiter || function (thisArg, _arguments, P, generator) {
+  function adopt(value) {
+    return value instanceof P ? value : new P(function (resolve) {
+      resolve(value);
+    });
+  }
+
+  return new (P || (P = Promise))(function (resolve, reject) {
+    function fulfilled(value) {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    }
+
+    function rejected(value) {
+      try {
+        step(generator["throw"](value));
+      } catch (e) {
+        reject(e);
+      }
+    }
+
+    function step(result) {
+      result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+    }
+
+    step((generator = generator.apply(thisArg, _arguments || [])).next());
+  });
+};
+
+var __generator = this && this.__generator || function (thisArg, body) {
+  var _ = {
+    label: 0,
+    sent: function sent() {
+      if (t[0] & 1) throw t[1];
+      return t[1];
+    },
+    trys: [],
+    ops: []
+  },
+      f,
+      y,
+      t,
+      g;
+  return g = {
+    next: verb(0),
+    "throw": verb(1),
+    "return": verb(2)
+  }, typeof Symbol === "function" && (g[Symbol.iterator] = function () {
+    return this;
+  }), g;
+
+  function verb(n) {
+    return function (v) {
+      return step([n, v]);
+    };
+  }
+
+  function step(op) {
+    if (f) throw new TypeError("Generator is already executing.");
+
+    while (_) {
+      try {
+        if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+        if (y = 0, t) op = [op[0] & 2, t.value];
+
+        switch (op[0]) {
+          case 0:
+          case 1:
+            t = op;
+            break;
+
+          case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+          case 5:
+            _.label++;
+            y = op[1];
+            op = [0];
+            continue;
+
+          case 7:
+            op = _.ops.pop();
+
+            _.trys.pop();
+
+            continue;
+
+          default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
+              _ = 0;
+              continue;
+            }
+
+            if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+
+            if (op[0] === 6 && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+
+              _.ops.push(op);
+
+              break;
+            }
+
+            if (t[2]) _.ops.pop();
+
+            _.trys.pop();
+
+            continue;
+        }
+
+        op = body.call(thisArg, _);
+      } catch (e) {
+        op = [6, e];
+        y = 0;
+      } finally {
+        f = t = 0;
+      }
+    }
+
+    if (op[0] & 5) throw op[1];
+    return {
+      value: op[0] ? op[1] : void 0,
+      done: true
+    };
+  }
+};
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var CalenderAPIService_1 = __importDefault(require("./../Services/CalenderAPIService"));
+
+var Calendar =
+/** @class */
+function () {
+  function Calendar() {
+    this.eventsCon = document.querySelector(".events");
+    this.daysEle = new Array();
+    this.daysUntilToday = 0;
+  }
+
+  Calendar.prototype.init = function () {
+    return __awaiter(this, void 0, void 0, function () {
+      var date, events, monthNameEle, _i, events_1, event;
+
+      return __generator(this, function (_a) {
+        switch (_a.label) {
+          case 0:
+            date = new Date();
+            return [4
+            /*yield*/
+            , new CalenderAPIService_1.default().getEvents()];
+
+          case 1:
+            events = _a.sent();
+            monthNameEle = document.querySelector(".calender_nav .date");
+            this.generateCalendarDays();
+
+            for (_i = 0, events_1 = events; _i < events_1.length; _i++) {
+              event = events_1[_i];
+              this.makeEventCard(event);
+
+              if (event.date.getMonth() === date.getMonth()) {
+                this.markCalendarDay(event.date.getDate());
+              }
+            }
+
+            this.renderCalendar();
+            monthNameEle.innerText = this.monthToString(date.getMonth()) + " " + date.getFullYear();
+            return [2
+            /*return*/
+            ];
+        }
+      });
+    });
+  };
+
+  Calendar.prototype.generateCalendarDays = function () {
+    var date = new Date();
+    var daysInMonth = new Date(date.getFullYear(), date.getMonth(), 0).getDate() + 1;
+    this.fillDaysUntilToday(date.getDay());
+
+    for (var i = 1; i <= daysInMonth; i++) {
+      var ele = document.createElement("span");
+      ele.innerText = i.toString();
+      this.daysEle.push(ele);
+    }
+  };
+
+  Calendar.prototype.fillDaysUntilToday = function (todaysDay) {
+    var daysAwayFromToday = 7 - todaysDay;
+    this.addDisabledDays(daysAwayFromToday);
+    this.daysUntilToday = daysAwayFromToday;
+  };
+
+  Calendar.prototype.addDisabledDays = function (amount) {
+    for (var i = 1; i <= amount; i++) {
+      var span = document.createElement("span");
+      span.classList.add("disabled");
+      this.daysEle.push(span);
+    }
+  };
+
+  Calendar.prototype.markCalendarDay = function (dayNumber) {
+    this.daysEle[dayNumber - 1 + this.daysUntilToday].classList.add("highlight");
+  };
+
+  Calendar.prototype.renderCalendar = function () {
+    var gridEle = document.querySelector(".grid");
+
+    for (var _i = 0, _a = this.daysEle; _i < _a.length; _i++) {
+      var span = _a[_i];
+      gridEle.appendChild(span);
+    }
+  };
+
+  Calendar.prototype.makeEventCard = function (event) {
+    var eventEle = document.createElement("div");
+    var dayNumberEle = document.createElement("div");
+    var dateEle = document.createElement("div");
+    var monthYearEle = document.createElement("div");
+    var dayNameEle = document.createElement("div");
+    var titleEle = document.createElement("div");
+    eventEle.classList.add("event");
+    dayNumberEle.classList.add("dayNumber");
+    dateEle.classList.add("date");
+    monthYearEle.classList.add("monthYear");
+    dayNameEle.classList.add("dayName");
+    titleEle.classList.add("title");
+    eventEle.appendChild(dayNumberEle);
+    dateEle.appendChild(monthYearEle);
+    dateEle.appendChild(dayNameEle);
+    eventEle.appendChild(dateEle);
+    eventEle.appendChild(titleEle);
+    dayNumberEle.innerText = event.date.getDate().toString();
+    monthYearEle.innerText = this.monthToString(event.date.getMonth()) + " " + event.date.getFullYear();
+    dayNameEle.innerText = this.dayToString(event.date.getDay());
+    titleEle.innerText = event.name;
+    this.eventsCon.appendChild(eventEle);
+  }; //convert a month number to a string
+
+
+  Calendar.prototype.monthToString = function (month) {
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    return months[month];
+  }; //convert a day number to a string 
+
+
+  Calendar.prototype.dayToString = function (day) {
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    return days[day];
+  };
+
+  return Calendar;
+}();
+
+exports.default = Calendar;
+},{"./../Services/CalenderAPIService":"script/Services/CalenderAPIService.ts"}],"script/Index/UX.ts":[function(require,module,exports) {
+"use strict";
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.initCalendar = exports.toggleNavbar = void 0;
+
+var Calendar_1 = __importDefault(require("./Calendar"));
+
+function toggleNavbar() {
   var prayerSection = document.getElementById("prayer_section");
   var servicesSection = document.getElementById("services");
+  var homeSection = document.getElementById("home");
   var navBar = document.querySelector("nav");
 
   var hideNavBar = function hideNavBar() {
@@ -222,11 +730,35 @@ function _toggleNavbar() {
     threshold: 1.0
   };
   new IntersectionObserver(showNavBar, options).observe(prayerSection);
-  new IntersectionObserver(hideNavBar, options).observe(servicesSection); //fixing a bug where it would not hide the navbar on the home section
-
-  hideNavBar();
+  new IntersectionObserver(hideNavBar, options).observe(servicesSection);
+  new IntersectionObserver(hideNavBar, options).observe(homeSection);
 }
-},{}],"script/script.ts":[function(require,module,exports) {
+
+exports.toggleNavbar = toggleNavbar;
+
+function initCalendar() {
+  var calendar = new Calendar_1.default();
+  calendar.init();
+}
+
+exports.initCalendar = initCalendar;
+},{"./Calendar":"script/Index/Calendar.ts"}],"script/Index/index.ts":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.IndexFunctions = void 0;
+
+var UX_1 = require("./UX");
+
+function IndexFunctions() {
+  UX_1.toggleNavbar();
+  UX_1.initCalendar();
+}
+
+exports.IndexFunctions = IndexFunctions;
+},{"./UX":"script/Index/UX.ts"}],"script/script.ts":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -236,10 +768,10 @@ Object.defineProperty(exports, "__esModule", {
 
 require("@fortawesome/fontawesome-free/css/all.min.css");
 
-var index_1 = require("./index");
+var index_1 = require("./Index/index");
 
 index_1.IndexFunctions();
-},{"@fortawesome/fontawesome-free/css/all.min.css":"../node_modules/@fortawesome/fontawesome-free/css/all.min.css","./index":"script/index.ts"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"@fortawesome/fontawesome-free/css/all.min.css":"../node_modules/@fortawesome/fontawesome-free/css/all.min.css","./Index/index":"script/Index/index.ts"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -267,7 +799,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60679" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "14292" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
