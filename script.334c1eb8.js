@@ -344,7 +344,7 @@ var CalendarAPIService =
 function () {
   function CalendarAPIService() {
     this.apiKey = "AIzaSyD227OlDj5joTJ_SlnqDXwkOMQs-eKLLoU";
-    this.calendarID = "3oj3bhd9q6325maglm0i8srom4@group.calendar.google.com";
+    this.calendarID = "5sos0lr58khddl91ebog1muvbc@group.calendar.google.com";
     this.maxResults = 4;
   }
 
@@ -799,7 +799,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "14292" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "3655" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
