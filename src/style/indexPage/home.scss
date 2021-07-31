@@ -1,6 +1,7 @@
 @import "./../var.scss";
 #home {
     background: url("./../../assets/images/HomeBackground.svg");
+    background-size: cover;
     .topNav {
         background-color: $white;
         display: flex;
