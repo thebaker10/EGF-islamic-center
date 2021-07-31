@@ -1,0 +1,59 @@
+.title {
+    padding: 0 !important;
+}
+
+.MPwidget {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    position: absolute;
+    z-index: 4;
+    top:55%;
+    left: 10%;
+
+    .MPheader {
+        display: none;
+    }
+
+    .MPfooter {
+        position: absolute;
+        @include frosty;
+        left: 66vw;
+        top: 22vh;
+        width: 30ch;
+
+    }
+    table, tbody {
+        border: none;
+        display: flex;
+        width: 80vw;
+        text-align: center;
+        justify-content: space-between;
+        height: 20vh;
+        td, th {
+            display: inline-block;
+        }
+
+        tr:nth-child(1), tr:nth-child(3) {
+            display: none;
+        }
+
+        tr {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            background-color: transparent !important;
+            font-weight: 600;
+            font-size: 3rem;
+            td {
+                width: 100%;
+                text-align: center !important;
+                &:nth-child(2) {
+                    font-weight: normal;
+                    font-size: 2.5rem;
+                }
+            }
+            
+
+        }
+    }
+}

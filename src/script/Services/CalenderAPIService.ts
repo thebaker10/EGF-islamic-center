@@ -4,7 +4,7 @@ import {Event} from "../types/Event";
 export default class CalendarAPIService {
 
     private readonly apiKey = "AIzaSyD227OlDj5joTJ_SlnqDXwkOMQs-eKLLoU";
-    private readonly calendarID = "3oj3bhd9q6325maglm0i8srom4@group.calendar.google.com";
+    private readonly calendarID = "5sos0lr58khddl91ebog1muvbc@group.calendar.google.com";
     private readonly maxResults = 4;
 
 
