@@ -1,9 +1,16 @@
 {
-    "my": {
-      "key": "HEY"
+  "nav": {
+    "education": "Education",
+    "prayer": "Prayer",
+    "resources": "Resources",
+    "events": "Events",
+    "community": "Community"
+  },
+  "home": {
+    "title": {
+      "partOne": "East Grand Forks",
+      "partTwo": "Islamic Center"
     },
-    "other": {
-      "key": "man",
-      "ok": "confirm"
-    }
-  }
+    "subText": "We are an Islamic Center that is detected to help our Muslim community and provide the necessary resources for them to succeed."
+  }    
+}
