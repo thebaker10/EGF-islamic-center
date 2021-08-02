@@ -13,6 +13,7 @@ html,body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
+    font-size: 16px;
     // height: 100vh;
 }
 
@@ -33,4 +34,10 @@ section {
 
 footer {
     scroll-snap-align: start;
+}
+
+@media only screen and (max-width: $smallLaptopScreen) { 
+    body {
+        font-size: 14px;
+    }
 }

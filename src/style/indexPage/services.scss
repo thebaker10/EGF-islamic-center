@@ -4,31 +4,34 @@
 @mixin card($color) {
     position: relative;
     width: 14vw;
+    height: 30vh;
     color: $white;
     background-color: $white;
     .logo {
         border: $color 1rem solid;
-        border-radius: 50%;
-        width: 10rem;
-        height: 10rem;
+        // border-radius: 50%;
+        width: 10vw;
+        height: 5vw;
+        border-bottom: 0;
+        border-top-left-radius: 10vw; 
+        border-top-right-radius: 10vw;
         display: grid;
         justify-content: center;
         margin-left: 50%;
         transform: translateX(-50%);
         @include svgImageSize;
         img{
-
-            padding-top: 0.3rem;
+            padding-top: 0.9rem;
         }
     }
     
     .body {
         background-color: $color;
-        position: absolute;
         top: 5rem;
         border-radius: 2rem;
         padding: 1rem;
         height: 30vh;
+        overflow: hidden;
 
         .title {
             text-align: center;
@@ -37,6 +40,40 @@
         }
         hr {
             border: $white 0.15rem solid;
+        }
+    }
+
+    @media only screen and (max-width: $smallLaptopScreen) {
+        width: 60vw;       
+        height: 70vh;
+        .logo {
+            display: none;
+        }
+        .body {
+            height: 50vh;
+        }
+    }
+}
+
+@mixin smallDevicesStyle($itemsInView) {
+    #services {
+        .container {
+            height: 100vh;
+        }
+        .background {
+            display: none;
+        }
+        .slider {
+            overflow-x: scroll;
+            #row {
+                margin-top: 0 !important;
+                position: relative;
+                left: 0;
+                z-index: 2;
+                width: calc(500% / #{$itemsInView});
+                display: flex;
+                gap: 1vw;
+            }
         }
     }
 }
@@ -62,10 +99,13 @@
     }
     
     #row {
-        display: flex;
+        display: grid;
         justify-content: space-evenly;
-        flex-direction: row;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         margin-top: 10vh;
+        margin-left: 3vw;
+        
         #schooling {
             @include card($red);
         }
@@ -92,4 +132,12 @@
         transform: translateX(-50%);
     }
 
+}
+
+@media only screen and (max-width: $smallLaptopScreen) {
+    @include smallDevicesStyle(2.5);
+}
+
+@media only screen and (max-width: $phoneSize) {
+    @include smallDevicesStyle(1.5);
 }

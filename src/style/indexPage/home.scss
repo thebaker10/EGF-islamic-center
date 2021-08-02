@@ -1,12 +1,23 @@
 @import "./../var.scss";
 #home {
     background: url("./../../assets/images/HomeBackground.svg");
-    background-size: cover;
+    background-size: cover;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .topNav {
         background-color: $white;
         display: flex;
-        justify-content: space-between;
-        padding: 0 5rem;
+        justify-content: space-around;
+        width: 100vw;
+        .con {
+            max-width: $maxWidth;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5rem;
+        }
         ul {
             margin: 0;
             list-style: none;
@@ -30,6 +41,7 @@
         display: grid;
         height: 89vh;
         padding: 0 9vw;
+        max-width: $maxWidth;
         grid-template-areas: "Info Logo Logo"
         "button button button"
         "arrow arrow arrow";
@@ -73,12 +85,12 @@
         button {
             grid-area: button;
             border: 0;
-            width: 20vw;
+            width: 27rem;
+            height: 5rem;
             background-color: $lightBlue;
             color: $white;
             font-size: 2rem;
-            border-radius: 10vw;
-            margin-top: 5vh;
+            border-radius: 15rem;
             margin-left: 50%;
             transform: translateX(-50%);
         }
@@ -105,3 +117,30 @@
     }
 }
 
+
+@media only screen and (max-width: $phoneSize) {
+    #home {
+        background: $lightGreen;
+        .content {
+            margin-top: 1rem;
+            text-align: center;
+            grid-template-areas: "Logo"
+            "Info"
+            "button"
+            "arrow";
+            h1 {
+                font-size: 2rem !important;
+                font-weight: 600;
+            }
+            p {
+                font-size: 1.2rem !important;
+                width: 98vw;
+                margin: 1rem auto auto auto;
+                
+            }
+            button {
+                width: 25rem;
+            }
+        }
+    }
+}
