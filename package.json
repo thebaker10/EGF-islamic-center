@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html",
-    "translate": "static-i18n -l en -i en -i ar src && copy .\\i18n\\* .\\dist\\",
-    "serve": "parcel build src/index.html --public-url / && serve dist",
+    "translate_en": "npm run build && static-i18n -l en dist --localesPath .\\locales && copy .\\i18n\\* .\\dist\\",
+    "translate_ar": "npm run build && static-i18n -l ar dist && copy .\\i18n\\* .\\dist\\",
+    "serve": "serve dist",
     "build": "parcel build src/index.html --public-url ./"
   },
   "keywords": [],
