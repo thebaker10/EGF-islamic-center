@@ -12,5 +12,42 @@
       "partTwo": "Islamic Center"
     },
     "subText": "We are an Islamic Center that is detected to help our Muslim community and provide the necessary resources for them to succeed."
-  }    
+  },
+  "services": {
+    "title": "What do we do?",
+    "islamic_schooling": {
+      "title": "Islamic Schooling",
+      "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
+    },
+    "prayer": {
+      "title": "Prayer",
+      "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
+    },
+    "resources": {
+      "title": "Resources",
+      "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
+    },
+    "events": {
+      "title": "Events",
+      "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
+    },
+    "community_help": {
+      "title": "Community Help",
+      "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
+    }
+  },
+  "Events": {
+    "about_btn": {
+      "event1": "Muslim Pro",
+      "event2": "Muslim Pro",
+      "event3": "Muslim Pro",
+      "event4": "Muslim Pro",
+      "event5": "Muslim Pro"
+    },
+    "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
+  },
+  "donation": {
+    "title": "How Can You Help Us?",
+      "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
+    }
 }
