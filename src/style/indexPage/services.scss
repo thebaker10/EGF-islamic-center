@@ -109,7 +109,7 @@
             @include card($red);
         }
         #prayer {
-            @include card($lightGreen);
+            @include card($backgroundMain);
         }
         #resources {
             @include card($lightBlue);

@@ -64,7 +64,7 @@
                 @include tab($red);
             }
             .tab:nth-child(2) {
-                @include tab(darken($lightGreen, 10));
+                @include tab(darken($darkBlue, 10));
             }
             .tab:nth-child(3) {
                 @include tab($purple);
@@ -73,7 +73,7 @@
                 @include tab($brown);
             }
             .tab:nth-child(5) {
-                @include tab(rgb(23, 161, 207));
+                @include tab($lightBlue);
             }
         }
         .info {
@@ -97,7 +97,7 @@
 
 @media only screen and (max-width: $smallLaptopScreen) { 
     #resources {
-        background: $lightGreen;
+        background: $backgroundMain;
         .content {
             grid-template-columns: repeat(1,1fr);
             grid-template-rows: repeat(2,1fr);
