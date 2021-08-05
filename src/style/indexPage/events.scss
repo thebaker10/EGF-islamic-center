@@ -94,7 +94,8 @@
                 border-radius: 2vw;
                 padding: 1rem;
                 display: flex;
-
+                justify-content: space-between;
+                overflow: hidden;
                 .dayNumber {
                     display: grid;
                     align-items: center;
@@ -123,15 +124,52 @@
                     }
                 }
                 .title {
+                    flex:1;
                     color: $darkGreen;
-                    // font-weight: bold;
-                    font-size: 3rem;
-                    // font-weight: 600;
+                    font-size: 2rem;
                     align-self: center;
-                    padding-left: 6rem;
+                    text-align: center;
                 }
             }
         }
     }
 
+}
+
+@media only screen and (max-width: $phoneSize) { 
+    #events {
+        .content {
+            width: 90%;
+            .calender {
+                display: none;
+            }
+
+            .event {
+                width: 90% !important;
+
+                .dayNumber {
+                    flex: 1;
+                    border: none !important;
+                    
+                }
+    
+                .date {
+                    flex: 1;
+                    .monthYear {
+                        font-size: 1rem !important;
+                        text-align: left;
+                        padding: 0 !important;
+                    }
+                    .dayName {
+                        padding: 0 !important;
+                    }
+                }
+                .title {
+                    flex: 3 !important;
+                    font-size: 1.2rem !important;
+                }
+            }
+    
+        }
+    }
 }

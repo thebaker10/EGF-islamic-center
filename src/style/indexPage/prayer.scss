@@ -41,3 +41,9 @@ $_sunset: linear-gradient(to top, #040308, #AD4A28, #DD723C, #FC7001, #DCB697, #
         // }
     }
 }
+
+@media only screen and (max-width: $phoneSize) { 
+    #prayer_section {
+        display: none;
+    } 
+}

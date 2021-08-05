@@ -19,6 +19,7 @@ html,body {
 
 .scroll-container { 
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
     scroll-snap-stop: normal;
     overflow-y: auto;
     overflow-x: hidden;
@@ -29,11 +30,15 @@ html,body {
 section {
     height: 100vh;   
     overflow: hidden;
-    scroll-snap-align: start;
+    scroll-snap-align: end;
 }
 
 footer {
-    scroll-snap-align: start;
+    scroll-snap-align: end;
+}
+
+a {
+    all: unset;
 }
 
 @media only screen and (max-width: $smallLaptopScreen) { 

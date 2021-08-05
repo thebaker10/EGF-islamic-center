@@ -64,3 +64,32 @@ footer {
     }
     
 }
+
+@media only screen and (max-width: $phoneSize) { 
+    footer {
+        h1 {
+            margin: 0;
+        }
+        .content {
+            flex-direction: column;
+            text-align: center;
+            .contactUs {
+                ul {
+                    text-align: left;
+                    margin-left: 10%;
+                }
+            }
+            .quickMenu {
+                display: none;
+            }
+            .newsLetter {
+                input {
+                    width: 50vw;
+                }
+                button {
+                    width: 15ch;
+                }
+            }
+        }
+    }
+}

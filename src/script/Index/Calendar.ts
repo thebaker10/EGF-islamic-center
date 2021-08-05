@@ -8,18 +8,37 @@ export default class Calendar {
     
 
     async init() {
-        const date = new Date();
-        const events = await new CalendarEventService().getEvents();
-        const monthNameEle:HTMLDivElement = document.querySelector(".calender_nav .date");
-        this.generateCalendarDays()
-        for(let event of events) {
-            this.makeEventCard(event);
-            if(event.date.getMonth() === date.getMonth()) {
-                this.markCalendarDay(event.date.getDate());
+        try {
+            const date = new Date();
+            const events = await new CalendarEventService().getEvents();
+            const monthNameEle:HTMLDivElement = document.querySelector(".calender_nav .date");
+            this.generateCalendarDays()
+            if(events.length > 0) {
+                for(let event of events) {
+                    this.makeEventCard(event);
+                    if(event.date.getMonth() === date.getMonth()) {
+                        this.markCalendarDay(event.date.getDate());
+                    }
+                }
+            } else {
+                const event:Event = {
+                    name:"Sorry, there are no upcoming events",
+                    date: new Date()
+                }
+                this.makeEventCard(event);
             }
+            
+            this.renderCalendar();
+            monthNameEle.innerText = `${this.monthToString(date.getMonth())} ${date.getFullYear()}`
+        } catch(err) {
+            console.error(err);
+            const event:Event = {
+                name:"Sorry, something went wrong on our end!",
+                date: new Date()
+            }
+            this.makeEventCard(event);
         }
-        this.renderCalendar();
-        monthNameEle.innerText = `${this.monthToString(date.getMonth())} ${date.getFullYear()}`
+        
     }
 
     private generateCalendarDays() {
