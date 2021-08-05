@@ -62,23 +62,8 @@
         .home_logo {
             grid-area: Logo;
             $animation-speed: 2s;
-            svg {
-                width: 30vw;
-                #qubba {
-                    fill: $qoba_color !important;
-                }
-                #house {
-                    fill: $house_color !important;
-                }
-                #door1 {
-                    animation: doorAnimation $animation-speed infinite alternate 0s;
-                }
-                #door2 { 
-                    animation: doorAnimation $animation-speed infinite alternate $animation-speed;
-                }
-                #door3 {
-                    animation: doorAnimation $animation-speed infinite alternate $animation-speed*2;
-                }
+            #mosque {
+                width: 25vw;
             }
         }
 
@@ -121,18 +106,6 @@
         
     }
     
-}
-
-
-
-
-@keyframes doorAnimation { 
-    from {
-        fill:$doorColor;
-    }
-    to {
-        fill: $doorColorChanged;
-    }
 }
 
 @keyframes arrowAnimation { 
