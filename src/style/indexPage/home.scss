@@ -120,6 +120,9 @@
 
 @media only screen and (max-width: $phoneSize) {
     #home {
+        #mosque {
+            width: 40vw !important;
+        }
         background: $backgroundMain;
         .content {
             margin-top: 1rem;
