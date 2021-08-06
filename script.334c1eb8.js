@@ -580,11 +580,13 @@ function () {
 
   Calendar.prototype.init = function () {
     return __awaiter(this, void 0, void 0, function () {
-      var date, events, monthNameEle, _i, events_1, event;
+      var date, events, monthNameEle, _i, events_1, event, event, err_1, event;
 
       return __generator(this, function (_a) {
         switch (_a.label) {
           case 0:
+            _a.trys.push([0, 2,, 3]);
+
             date = new Date();
             return [4
             /*yield*/
@@ -595,17 +597,42 @@ function () {
             monthNameEle = document.querySelector(".calender_nav .date");
             this.generateCalendarDays();
 
-            for (_i = 0, events_1 = events; _i < events_1.length; _i++) {
-              event = events_1[_i];
-              this.makeEventCard(event);
+            if (events.length > 0) {
+              for (_i = 0, events_1 = events; _i < events_1.length; _i++) {
+                event = events_1[_i];
+                this.makeEventCard(event);
 
-              if (event.date.getMonth() === date.getMonth()) {
-                this.markCalendarDay(event.date.getDate());
+                if (event.date.getMonth() === date.getMonth()) {
+                  this.markCalendarDay(event.date.getDate());
+                }
               }
+            } else {
+              event = {
+                name: "Sorry, there are no upcoming events",
+                date: new Date()
+              };
+              this.makeEventCard(event);
             }
 
             this.renderCalendar();
             monthNameEle.innerText = this.monthToString(date.getMonth()) + " " + date.getFullYear();
+            return [3
+            /*break*/
+            , 3];
+
+          case 2:
+            err_1 = _a.sent();
+            console.error(err_1);
+            event = {
+              name: "Sorry, something went wrong on our end!",
+              date: new Date()
+            };
+            this.makeEventCard(event);
+            return [3
+            /*break*/
+            , 3];
+
+          case 3:
             return [2
             /*return*/
             ];
@@ -711,9 +738,7 @@ exports.initCalendar = exports.toggleNavbar = void 0;
 var Calendar_1 = __importDefault(require("./Calendar"));
 
 function toggleNavbar() {
-  var prayerSection = document.getElementById("prayer_section");
-  var servicesSection = document.getElementById("services");
-  var homeSection = document.getElementById("home");
+  var sections = document.querySelectorAll("section");
   var navBar = document.querySelector("nav");
 
   var hideNavBar = function hideNavBar() {
@@ -729,9 +754,16 @@ function toggleNavbar() {
     rootMargin: "0px",
     threshold: 1.0
   };
-  new IntersectionObserver(showNavBar, options).observe(prayerSection);
-  new IntersectionObserver(hideNavBar, options).observe(servicesSection);
-  new IntersectionObserver(hideNavBar, options).observe(homeSection);
+
+  for (var i = 0; i < sections.length; i++) {
+    if (i < 2) {
+      new IntersectionObserver(hideNavBar, options).observe(sections[i]);
+    } else {
+      new IntersectionObserver(showNavBar, options).observe(sections[i]);
+    }
+  }
+
+  hideNavBar();
 }
 
 exports.toggleNavbar = toggleNavbar;
@@ -799,7 +831,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "3655" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1029" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
