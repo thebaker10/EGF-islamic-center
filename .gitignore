@@ -2,3 +2,5 @@ node_modules
 .cache
 dist
 i18n
+.firebase
+public
