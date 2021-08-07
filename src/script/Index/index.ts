@@ -1,7 +1,8 @@
-import {toggleNavbar, initCalendar} from "./UX";
+import {toggleNavbar, initCalendar, switchResources} from "./UX";
 export function IndexFunctions() {
     toggleNavbar();
     initCalendar();
+    switchResources();
 }
 
 
