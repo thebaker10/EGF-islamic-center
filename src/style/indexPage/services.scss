@@ -3,17 +3,17 @@
 
 @mixin card($color) {
     position: relative;
-    width: 14vw;
-    height: 30vh;
     color: $white;
     background-color: $white;
+    scroll-snap-align: center;
     .logo {
         border: $color 1rem solid;
-        width: 10vw;
-        height: 5vw;
+        width: 40%;
+        height: 22%;
         border-bottom: 0;
-        border-top-left-radius: 10vw; 
-        border-top-right-radius: 10vw;
+        border-radius: 0;
+        border-top-left-radius: 50%; 
+        border-top-right-radius: 50%;
         display: grid;
         justify-content: center;
         margin-left: 50%;
@@ -41,41 +41,8 @@
             border: $white 0.15rem solid;
         }
     }
-
-    @media only screen and (max-width: $phoneSize) {
-        width: 60vw;       
-        height: 70vh;
-        .logo {
-            display: none;
-        }
-        .body {
-            height: 50vh;
-        }
-    }
 }
 
-@mixin smallDevicesStyle($itemsInView) {
-    #services {
-        .container {
-            height: 100vh;
-        }
-        .background {
-            display: none;
-        }
-        .slider {
-            overflow-x: scroll;
-            #row {
-                margin-top: 0 !important;
-                position: relative;
-                left: 0;
-                z-index: 2;
-                width: calc(500% / #{$itemsInView});
-                display: flex;
-                gap: 1vw;
-            }
-        }
-    }
-}
 
 
 #services {
@@ -98,12 +65,11 @@
     }
     
     #row {
-        display: grid;
+        display: flex;
         justify-content: space-evenly;
-        grid-template-rows: repeat(1, 1fr);
-        grid-template-columns: repeat(5, 1fr);
         margin-top: 10vh;
         margin-left: 3vw;
+        gap: 2vw;
         
         #schooling {
             @include card($red);
@@ -133,5 +99,29 @@
 
 }
 @media only screen and (max-width: $phoneSize) {
-    @include smallDevicesStyle(1.5);
+    #services {
+        #title {
+            padding-top: 2vh;
+        }
+        .background {
+            display: none;
+        }
+        .slider {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            overflow: auto;
+            height: 80vh;
+            scroll-snap-type: y proximity;
+            scroll-behavior: smooth;
+            scroll-snap-stop: always;
+            #row {
+                flex-direction: column;
+                width: 80vw;    
+                gap: 6vh;
+            }
+        }
+    }
+    
+
 }
