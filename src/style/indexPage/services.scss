@@ -77,7 +77,7 @@
         #prayer {
             @include card($backgroundMain);
         }
-        #resources {
+        #resources_card {
             @include card($lightBlue);
         }
         #events {
