@@ -108,13 +108,13 @@
 #services #row #prayer .body hr {
   border: #ffffff 0.15rem solid;
 }
-#services #row #resources {
+#services #row #resources_card {
   position: relative;
   color: #ffffff;
   background-color: #ffffff;
   scroll-snap-align: center;
 }
-#services #row #resources .logo {
+#services #row #resources_card .logo {
   border: #127a9c 1rem solid;
   width: 40%;
   height: 22%;
@@ -127,14 +127,14 @@
   margin-left: 50%;
   transform: translate(-50%, 5%);
 }
-#services #row #resources .logo img {
+#services #row #resources_card .logo img {
   width: 3.5rem;
   height: 3.5rem;
 }
-#services #row #resources .logo img {
+#services #row #resources_card .logo img {
   padding-top: 0.9rem;
 }
-#services #row #resources .body {
+#services #row #resources_card .body {
   background-color: #127a9c;
   top: 5rem;
   border-radius: 2rem;
@@ -142,12 +142,12 @@
   height: 30vh;
   overflow: hidden;
 }
-#services #row #resources .body .title {
+#services #row #resources_card .body .title {
   text-align: center;
   font-weight: bold;
   letter-spacing: 0.2rem;
 }
-#services #row #resources .body hr {
+#services #row #resources_card .body hr {
   border: #ffffff 0.15rem solid;
 }
 #services #row #events {
@@ -489,6 +489,10 @@
 }
 #resources {
   position: relative;
+  background: url("/ResourcesBackground.08d5e7aa.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #resources .background {
   background: url("/ResourcesBackground.08d5e7aa.svg");
@@ -697,7 +701,6 @@
   padding: 4rem 2rem;
   font-size: 1.3rem;
   height: 100%;
-  overflow-y: scroll;
 }
 #resources .content .info .explanation.selected {
   transition: all 0.2s ease-in-out;
@@ -967,7 +970,7 @@ footer {
   width: 100vw;
   color: #ffffff;
   overflow: hidden;
-  height: 32vh;
+  height: 25vh;
   display: flex;
   justify-content: center;
   position: relative;
@@ -976,7 +979,7 @@ footer .background {
   position: absolute;
   overflow: hidden;
   width: 100vw;
-  height: 32vh;
+  height: 25vh;
 }
 footer .background .img {
   width: 100%;
@@ -1010,31 +1013,53 @@ footer .content {
   width: 80%;
   justify-content: space-evenly;
   z-index: 0;
+  margin-top: 2rem;
+}
+footer .content .contactUs h1 {
+  margin: 0;
 }
 footer .content .contactUs ul {
   color: #ffd61d;
 }
 
 @media only screen and (max-width: 812px) {
+  footer {
+    height: 50vh;
+  }
+  footer .background {
+    position: absolute;
+    overflow: hidden;
+    width: 100vw;
+    height: 50vh;
+  }
+  footer .background .img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -3;
+    background-repeat: repeat-x;
+    background-image: url("/pattern.554761f1.png");
+  }
+  footer .background .hue {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    opacity: 0.85;
+  }
   footer h1 {
     margin: 0;
   }
   footer .content {
     flex-direction: column;
     text-align: center;
+    justify-content: space-around;
+    margin: 0;
   }
   footer .content .contactUs ul {
     text-align: left;
     margin-left: 10%;
-  }
-  footer .content .quickMenu {
-    display: none;
-  }
-  footer .content .newsLetter input {
-    width: 50vw;
-  }
-  footer .content .newsLetter button {
-    width: 15ch;
   }
 }
 html, body {
