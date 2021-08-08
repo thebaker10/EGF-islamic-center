@@ -42,6 +42,10 @@
 
 #resources {
     position: relative;
+    background: url("./../../assets/images/ResourcesBackground.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     .background {
         background: url("./../../assets/images/ResourcesBackground.svg");
         background-position: center;
