@@ -733,40 +733,9 @@ var __importDefault = this && this.__importDefault || function (mod) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.initCalendar = exports.toggleNavbar = void 0;
+exports.switchResources = exports.initCalendar = void 0;
 
 var Calendar_1 = __importDefault(require("./Calendar"));
-
-function toggleNavbar() {
-  var sections = document.querySelectorAll("section");
-  var navBar = document.querySelector("nav");
-
-  var hideNavBar = function hideNavBar() {
-    return navBar.classList.add("hidden");
-  };
-
-  var showNavBar = function showNavBar() {
-    return navBar.classList.remove("hidden");
-  };
-
-  var options = {
-    root: document.querySelector("scroll-container"),
-    rootMargin: "0px",
-    threshold: 1.0
-  };
-
-  for (var i = 0; i < sections.length; i++) {
-    if (i < 2) {
-      new IntersectionObserver(hideNavBar, options).observe(sections[i]);
-    } else {
-      new IntersectionObserver(showNavBar, options).observe(sections[i]);
-    }
-  }
-
-  hideNavBar();
-}
-
-exports.toggleNavbar = toggleNavbar;
 
 function initCalendar() {
   var calendar = new Calendar_1.default();
@@ -774,6 +743,39 @@ function initCalendar() {
 }
 
 exports.initCalendar = initCalendar;
+
+function switchResources() {
+  var tabs = document.querySelectorAll(".tab");
+  var explanations = document.querySelectorAll(".explanation");
+  var currentTab = 0;
+  tabs.forEach(function (tab, i) {
+    return tab.addEventListener("click", function () {
+      clearInterval(autoTabSwitcher);
+      switchTab(i);
+    });
+  });
+  var autoTabSwitcher = setInterval(function () {
+    if (currentTab < 4) currentTab++;else currentTab = 0;
+    switchTab(currentTab);
+  }, 4000);
+
+  function switchTab(tabNumber) {
+    removeAllSelected();
+    tabs[tabNumber].classList.add("selected");
+    explanations[tabNumber].classList.add("selected");
+  }
+
+  function removeAllSelected() {
+    tabs.forEach(function (tab) {
+      return tab.classList.remove("selected");
+    });
+    explanations.forEach(function (explanation) {
+      return explanation.classList.remove("selected");
+    });
+  }
+}
+
+exports.switchResources = switchResources;
 },{"./Calendar":"script/Index/Calendar.ts"}],"script/Index/index.ts":[function(require,module,exports) {
 "use strict";
 
@@ -785,8 +787,8 @@ exports.IndexFunctions = void 0;
 var UX_1 = require("./UX");
 
 function IndexFunctions() {
-  UX_1.toggleNavbar();
   UX_1.initCalendar();
+  UX_1.switchResources();
 }
 
 exports.IndexFunctions = IndexFunctions;
@@ -831,7 +833,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1029" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1046" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
