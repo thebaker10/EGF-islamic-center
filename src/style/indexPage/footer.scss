@@ -30,12 +30,18 @@ footer {
         justify-content: space-evenly;
         z-index: 0;
         margin-top: 2rem;
+        h1 {
+            margin: 0;
+        }
         .contactUs {
-            h1 {
-                margin: 0;
-            }
             ul {
                 color: lighten($color: $yellow, $amount: 16);
+            }
+        }
+        .legalInfo {
+            a {
+                text-decoration: underline;
+                cursor: pointer;
             }
         }
     }
