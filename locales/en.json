@@ -17,32 +17,32 @@
     "title": "What do we do?",
     "islamic_schooling": {
       "title": "Islamic Schooling",
-      "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
+      "subText": "We provide quran schooling for those who need to learn to read Arabic."
     },
     "prayer": {
       "title": "Prayer",
-      "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
+      "subText": "Our Prayer time will be posted on the website and updated automatically"
     },
     "resources": {
       "title": "Resources",
-      "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
+      "subText": "In the resources section there are a lot of information if you need to know about the mosque and our East Grand Forks community"
     },
     "events": {
       "title": "Events",
-      "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
+      "subText": "Here you will find all the events and calendar"
     },
     "community_help": {
       "title": "Community Help",
       "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
     }
   },
-  "Events": {
+  "resources": {
     "about_btn": {
-      "event1": "Muslim Pro",
-      "event2": "Muslim Pro",
-      "event3": "Muslim Pro",
-      "event4": "Muslim Pro",
-      "event5": "Muslim Pro"
+      "resources1": "Muslim Pro",
+      "resources2": "Muslim Pro",
+      "resources3": "Muslim Pro",
+      "resources4": "Muslim Pro",
+      "resources5": "Muslim Pro"
     },
     "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
   },
