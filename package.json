@@ -4,10 +4,8 @@
   "description": "",
   "main": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html",
-    "translate_en": "npm run build && static-i18n -l en dist --localesPath .\\locales && copy .\\i18n\\* .\\dist\\",
-    "translate_ar": "npm run build && static-i18n -l ar dist && copy .\\i18n\\* .\\dist\\",
+    "translate": "rmdir /s /Q dist && rmdir /s /Q i18n /s && npm run build && static-i18n -l en -i en -i ar -i so dist --localesPath .\\locales && xcopy .\\i18n .\\dist\\ /E /Y",
     "serve": "serve dist",
     "build": "parcel build src/index.html --public-url ./"
   },

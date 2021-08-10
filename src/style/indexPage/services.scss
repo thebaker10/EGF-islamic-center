@@ -2,6 +2,7 @@
 @import "./../svgFunctions.scss";
 
 @mixin card($color) {
+    flex: 1;
     position: relative;
     color: $white;
     background-color: $white;

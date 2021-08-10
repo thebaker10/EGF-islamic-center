@@ -1,53 +1,63 @@
 {
-  "nav": {
-    "education": "Education",
-    "prayer": "Prayer",
-    "resources": "Resources",
-    "events": "Events",
-    "community": "Community"
-  },
-  "home": {
-    "title": {
-      "partOne": "East Grand Forks",
-      "partTwo": "Islamic Center"
+  "IndexPage": {
+    "home": {
+      "title": {
+        "partOne": "East Grand Forks English",
+        "partTwo": "Islamic Center"
+      },
+      "subText": "We are an Islamic Center that is detected to help our Muslim community and provide the necessary resources for them to succeed.",
+      "button": "Learn More"
     },
-    "subText": "We are an Islamic Center that is detected to help our Muslim community and provide the necessary resources for them to succeed."
-  },
-  "services": {
-    "title": "What do we do?",
-    "islamic_schooling": {
-      "title": "Islamic Schooling",
-      "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
+    "services": {
+      "title": "What do we do?",
+      "islamic_schooling": {
+        "title": "Islamic Schooling",
+        "subText": "Come and join us every <> at <> for quran and islamic teaching from our Imam and learn a few things about our history"
+      },
+      "prayer": {
+        "title": "Prayer",
+        "subText": "We hold 5 prayers a day including the Friday's Duhr prayer and we hold additional prayers during Ramdan, Eid, and other events. "
+      },
+      "resources": {
+        "title": "Resources",
+        "subText": "If you are new to the US or in need of guidance please click here ( or scroll down ) for resources that will help you getting started "
+      },
+      "events": {
+        "title": "Events",
+        "subText": "We host different events though out the year so you can check our upcoming events by clicking here and plan accordingly"
+      },
+      "community_help": {
+        "title": "Community Help",
+        "subText": "This mosque does not belong to a single entity but rather it belongs to everyone and it is a home for all of us. However, in order to keep this mosque going we need support from our community. So, if you are interested click here to learn how you can support us"
+      }
     },
-    "prayer": {
-      "title": "Prayer",
-      "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
+    "Resources": {
+      "resource1": {
+        "title": "Muslim Pro",
+        "Info": "Muslim Pro is a phone app that allows you to get accurate pryer times and islamic events along with many other features "
+      },
+      "resource2": {
+        "title": "CAIR",
+        "Info": "&quot;The Council on American-Islamic Relations (CAIR) is a nonprofit, grassroots civil rights and advocacy organization. CAIR is America’s largest Muslim civil liberties organization, with affiliate offices nationwide. Its national headquarters is located on Capitol Hill in Washington, D.C. <br><br>Since its establishment in 1994, CAIR has worked to promote a positive image of Islam and Muslims in America. Through media relations, lobbying, education and advocacy, CAIR works to make sure a Muslim voice is represented. Through our work, CAIR seeks to empower American Muslims and encourage their participation in political and social activism.&quot; - <a href='https://www.cair.com/about_cair/cair-at-a-glance/'>CAIR at a Glance</a>"
+      },
+      "resource3": {
+        "title": "Resource3",
+        "Info": ""
+      },
+      "resource4": {
+        "title": "Resource4",
+        "Info": ""
+      },
+      "resource5": {
+        "title": "Resource5",
+        "Info": ""
+      }
     },
-    "resources": {
-      "title": "Resources",
-      "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
-    },
-    "events": {
-      "title": "Events",
-      "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
-    },
-    "community_help": {
-      "title": "Community Help",
-      "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
-    }
-  },
-  "Events": {
-    "about_btn": {
-      "event1": "Muslim Pro",
-      "event2": "Muslim Pro",
-      "event3": "Muslim Pro",
-      "event4": "Muslim Pro",
-      "event5": "Muslim Pro"
-    },
-    "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
-  },
-  "donation": {
-    "title": "How Can You Help Us?",
-      "subText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no"
-    }
+    "donation": {
+        "title": "How Can You Help Us?",
+        "subText": "In order to keep this mosque accessible to everyone and keep it running we have to pay $<> every <> and one of the best ways you can support us is by donating bellow to help us fullfil our rent. ",
+        "button": "Donate Now!"
+      }
+  }
+
 }
