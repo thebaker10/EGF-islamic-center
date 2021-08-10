@@ -37,3 +37,20 @@ export function switchResources() {
     }
 }
 
+
+export function selectLang() {
+    const arabicEle = document.getElementById("Arabic");
+    const englishEle = document.getElementById("English");
+    const soomaaliEle = document.getElementById("Soomaali");
+
+    switch(document.location.pathname) {
+        case "/so/": soomaaliEle.classList.add("active"); break;
+        case "/ar/": arabicEle.classList.add("active"); break;
+        case "/": englishEle.classList.add("active"); break;
+        
+        
+    }
+
+
+
+}
