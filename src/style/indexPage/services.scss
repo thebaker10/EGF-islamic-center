@@ -48,6 +48,10 @@
 
 #services {
     position: relative;
+    background: url("./../../assets/images/servicesBackground.svg");
+    background-repeat: no-repeat !important;
+    background-position: 0% 128%;
+    background-size: 105% auto;
     .background {
         background: url("./../../assets/images/servicesBackground.svg");
         width: 100vw;
