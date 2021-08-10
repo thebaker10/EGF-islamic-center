@@ -14,7 +14,6 @@
   "license": "ISC",
   "dependencies": {
     "@firebase/analytics": "^0.6.17",
-    "@fortawesome/fontawesome-free": "^5.15.3",
     "firebase": "^8.9.0",
     "parcel-bundler": "1.12.5"
   },
