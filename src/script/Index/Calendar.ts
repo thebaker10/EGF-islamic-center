@@ -102,10 +102,12 @@ export default class Calendar {
         eventEle.appendChild(dateEle);
         eventEle.appendChild(titleEle);
 
+
+
         dayNumberEle.innerText = event.date.getDate().toString();
         monthYearEle.innerText = `${this.monthToString(event.date.getMonth())} ${event.date.getFullYear()}`
         dayNameEle.innerText = this.dayToString(event.date.getDay());
-        titleEle.innerText = event.name;
+        titleEle.innerHTML = `${event.name}<br>${this.timeToString(event.date)}`;
 
         this.eventsCon.appendChild(eventEle);
     }
@@ -121,5 +123,21 @@ export default class Calendar {
         let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         return days[day];
     }
+
+    // convert date to 12 hour format
+    private timeToString(date:Date) {
+        let hours = date.getHours();
+        const period = hours >= 12 ? "pm" : "am";
+        hours = hours >= 12 ? hours - 12 : hours;
+        const minutes = date.getMinutes();
+        let timeString = `${hours}:${minutes} ${period}`;
+        
+        
+        if(hours < 10) {
+            timeString = `0${timeString}`;
+        }
+        return timeString;
+    }
+    
 
 }
