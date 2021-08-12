@@ -43,8 +43,9 @@ export default class Calendar {
 
     private generateCalendarDays() {
         const date = new Date();
-        const daysInMonth = new Date(date.getFullYear(), date.getMonth(), 0).getDate()+1;
-        this.fillDaysUntilToday(date.getDay());
+        const daysInMonth = new Date(date.getFullYear(), date.getMonth()+1, 0).getDate();
+        const firstDayOfMonth= new Date(date.getFullYear(), date.getMonth(), 1);
+        this.fillDaysUntilFirst(firstDayOfMonth.getDay());
         for(let i = 1; i<=daysInMonth; i++) {
             const ele = document.createElement("span");
             ele.innerText = i.toString();
@@ -52,10 +53,10 @@ export default class Calendar {
         }
     }   
 
-    private fillDaysUntilToday(todaysDay:number) {
-        const daysAwayFromToday = 7-todaysDay;
-        this.addDisabledDays(daysAwayFromToday);
-        this.daysUntilToday = daysAwayFromToday;
+    private fillDaysUntilFirst(firstDay:number) {
+        if(firstDay==0) return;
+        this.addDisabledDays(firstDay);
+        this.daysUntilToday = firstDay;
     }
 
     private addDisabledDays(amount:number) {

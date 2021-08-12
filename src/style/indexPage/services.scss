@@ -117,9 +117,6 @@
             justify-content: center;
             overflow: auto;
             height: 80vh;
-            scroll-snap-type: y proximity;
-            scroll-behavior: smooth;
-            scroll-snap-stop: always;
             #row {
                 flex-direction: column;
                 width: 80vw;    
