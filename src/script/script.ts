@@ -1,3 +1,3 @@
 import { IndexFunctions } from "./Index/index";
 
-IndexFunctions();
+// IndexFunctions();

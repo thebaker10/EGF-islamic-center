@@ -30,7 +30,7 @@
     }
 
     @media only screen and (max-width: $smallLaptopScreen) { 
-        width: 100vw;
+        width: 91vw;
         .triangle {
             $triangle: $width/14.2;
             border-top: $triangle+4vw solid transparent;
