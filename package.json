@@ -5,8 +5,6 @@
   "main": "src/index.html",
   "scripts": {
     "start": "parcel src/index.html",
-    "translate": "rmdir /s /Q dist && rmdir /s /Q i18n /s && npm run build && static-i18n -l en -i en -i ar -i so dist --localesPath .\\locales && xcopy .\\i18n .\\dist\\ /E /Y",
-    "serve": "serve dist",
     "serve_prod": "serve public",
     "build": "parcel build src/index.html --public-url ./"
   },
